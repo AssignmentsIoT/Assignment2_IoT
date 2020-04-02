@@ -1,7 +1,7 @@
-/home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/examples/emcute_mqttsn/bin/native/tinymt32/tinymt32.o: \
+/home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/tinymt32/tinymt32.o: \
  /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/sys/random/tinymt32/tinymt32.c \
  /usr/include/stdc-predef.h \
- /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/examples/emcute_mqttsn/bin/native/riotbuild/riotbuild.h \
+ /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/riotbuild/riotbuild.h \
  /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/sys/random/tinymt32/tinymt32.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/bits/libc-header-start.h /usr/include/features.h \
@@ -14,7 +14,7 @@
 
 /usr/include/stdc-predef.h:
 
-/home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/examples/emcute_mqttsn/bin/native/riotbuild/riotbuild.h:
+/home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/riotbuild/riotbuild.h:
 
 /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/sys/random/tinymt32/tinymt32.h:
 

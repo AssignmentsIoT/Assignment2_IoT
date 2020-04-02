@@ -1,7 +1,7 @@
-/home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/examples/emcute_mqttsn/bin/native/netdev_eth/netdev_eth.o: \
+/home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/netdev_eth/netdev_eth.o: \
  /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/drivers/netdev_eth/netdev_eth.c \
  /usr/include/stdc-predef.h \
- /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/examples/emcute_mqttsn/bin/native/riotbuild/riotbuild.h \
+ /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/riotbuild/riotbuild.h \
  /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/core/include/assert.h \
  /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/core/include/panic.h \
  /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/core/include/kernel_defines.h \
@@ -55,7 +55,7 @@
 
 /usr/include/stdc-predef.h:
 
-/home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/examples/emcute_mqttsn/bin/native/riotbuild/riotbuild.h:
+/home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/riotbuild/riotbuild.h:
 
 /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/core/include/assert.h:
 

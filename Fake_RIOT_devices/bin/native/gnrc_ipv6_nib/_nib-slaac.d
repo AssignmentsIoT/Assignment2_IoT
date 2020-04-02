@@ -1,7 +1,7 @@
-/home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/examples/emcute_mqttsn/bin/native/gnrc_ipv6_nib/_nib-slaac.o: \
+/home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib/_nib-slaac.o: \
  /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/sys/net/gnrc/network_layer/ipv6/nib/_nib-slaac.c \
  /usr/include/stdc-predef.h \
- /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/examples/emcute_mqttsn/bin/native/riotbuild/riotbuild.h \
+ /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/riotbuild/riotbuild.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdbool.h \
  /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/sys/include/luid.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h \
@@ -141,7 +141,7 @@
 
 /usr/include/stdc-predef.h:
 
-/home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/examples/emcute_mqttsn/bin/native/riotbuild/riotbuild.h:
+/home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/riotbuild/riotbuild.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/7/include/stdbool.h:
 

@@ -1,7 +1,7 @@
-/home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/examples/emcute_mqttsn/bin/native/gnrc_ipv6_nib/_nib-arsm.o: \
+/home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib/_nib-arsm.o: \
  /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/sys/net/gnrc/network_layer/ipv6/nib/_nib-arsm.c \
  /usr/include/stdc-predef.h \
- /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/examples/emcute_mqttsn/bin/native/riotbuild/riotbuild.h \
+ /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/riotbuild/riotbuild.h \
  /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/sys/include/xtimer.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/bits/libc-header-start.h /usr/include/features.h \
@@ -143,7 +143,7 @@
 
 /usr/include/stdc-predef.h:
 
-/home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/examples/emcute_mqttsn/bin/native/riotbuild/riotbuild.h:
+/home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/riotbuild/riotbuild.h:
 
 /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/sys/include/xtimer.h:
 

@@ -1,7 +1,7 @@
-/home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/examples/emcute_mqttsn/bin/native/periph_common/pm.o: \
+/home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/periph_common/pm.o: \
  /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/drivers/periph_common/pm.c \
  /usr/include/stdc-predef.h \
- /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/examples/emcute_mqttsn/bin/native/riotbuild/riotbuild.h \
+ /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/riotbuild/riotbuild.h \
  /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/core/include/irq.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdbool.h \
  /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/drivers/include/periph/pm.h \
@@ -47,7 +47,7 @@
 
 /usr/include/stdc-predef.h:
 
-/home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/examples/emcute_mqttsn/bin/native/riotbuild/riotbuild.h:
+/home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/riotbuild/riotbuild.h:
 
 /home/silvia/Università/Magistrale/IoT/Tutorial_RIOT_OS/Tutorials/RIOT/core/include/irq.h:
 

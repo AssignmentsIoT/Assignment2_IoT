@@ -1,1 +1,1 @@
-Here you should install the broker. You can follows the steps as described here: https://github.com/eclipse/mosquitto.rsmb
+Here, or in any other directory, you should install the broker. You can follows the steps as described here: https://github.com/eclipse/mosquitto.rsmb

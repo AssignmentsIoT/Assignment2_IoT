@@ -1,24 +1,3 @@
-/*
- * Copyright (C) 2015 Freie Universität Berlin
- *
- * This file is subject to the terms and conditions of the GNU Lesser
- * General Public License v2.1. See the file LICENSE in the top level
- * directory for more details.
- */
-
-/**
- * @ingroup     examples
- * @{
- *
- * @file
- * @brief       Example application for demonstrating RIOT's MQTT-SN library
- *              emCute
- *
- * @author      Hauke Petersen <hauke.petersen@fu-berlin.de>
- *
- * @}
- */
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -29,8 +8,10 @@
 #include "net/emcute.h"
 #include "net/ipv6/addr.h"
 
-#define EMCUTE_PORT         (1883U)
+#ifndef EMCUTE_ID
 #define EMCUTE_ID           ("gertrud")
+#endif
+#define EMCUTE_PORT         (1883U)
 #define EMCUTE_PRIO         (THREAD_PRIORITY_MAIN - 1)
 
 #define NUMOFSUBS           (16U)
@@ -263,8 +244,7 @@ static int cmd_will(int argc, char **argv)
     return 0;
 }
 
-//Returns a random number within the range [min, max] 
-float get_next_value(float min, float max, char* data){
+int get_next_value(float min, float max, char* data){
     //float value = (((float) rand()) % (max - min +1)) + min;
     float value = min + (rand() / (float) RAND_MAX) * (max - min);
     sprintf(data, "{Value: %f}", value);
@@ -276,35 +256,25 @@ int publish_sensor_data(emcute_topic_t topic_sensor, char* data_sensor, unsigned
             printf("[Error]: can't publish data. Topic '%s [%i]'\n",
                     topic_sensor.name, (int)topic_sensor.id);
             return 1;
-        }
+    }
 
-        printf(" [Topic '%s [%i]']: published %i bytes\n", topic_sensor.name, topic_sensor.id, (int) strlen(data_sensor));
+    printf(" [Topic '%s [%i]']: published %i bytes\n", topic_sensor.name, topic_sensor.id, (int) strlen(data_sensor));
 
-        //da cancellare
-        printf("pub with topic: %s and value %s and flags 0x%02x\n\n", topic_sensor.name, data_sensor, (int)flags);
+    //da cancellare
+    printf("pub with topic: %s and value %s and flags 0x%02x\n\n", topic_sensor.name, data_sensor, (int)flags);
 
-        sleep(3);
+    sleep(3);
 
-        return 0;
-}
-
-int id_error_handler(emcute_topic_t topic_sensor){
-    if (emcute_reg(&topic_sensor) != EMCUTE_OK) {
-            puts("[Error]: unable to obtain topic ID");
-            return 1;
-        }
     return 0;
 }
 
-//Args = ["temperature", "humidity", "wind direction", "wind intensity", "rain height"]
-static int cmd_publish_environmental_station_data(int argc, char **argv){
+static int cmd_start (int argc, char **argv) { 
 
-    if (argc < 11) {
-        printf("[Usage]: publish ES data <temperature_topic> <humidity_topic> <wind_direction_topic> <wind_intensity_topic> <rain_height_topic> \n");
-        return(1);
-    }
-
-    //Settings to publish data 
+    //Avoid errors
+    (void) argc;
+    (void) argv;
+    
+    //Settings to publish data
     emcute_topic_t topic_temperature_1;
     emcute_topic_t topic_temperature_2;
 
@@ -324,9 +294,8 @@ static int cmd_publish_environmental_station_data(int argc, char **argv){
 
     //Initialize pseudo-random generator seed using current time (for rand())
     srand(time(0));
-
+    
     //The user should use the command con to connect to the broker
-
     char data_temperature_1[128];
     char data_temperature_2[128];
 
@@ -341,8 +310,8 @@ static int cmd_publish_environmental_station_data(int argc, char **argv){
 
     char data_rain_height_1[128];
     char data_rain_height_2[128];
-
-    while(true){
+    
+     while (true) {
 
         //Get next sensor random value to publish
         get_next_value(min_temperature, max_temperature, data_temperature_1);
@@ -359,37 +328,67 @@ static int cmd_publish_environmental_station_data(int argc, char **argv){
 
         get_next_value(min_rain_height, max_rain_height, data_rain_height_1);
         get_next_value(min_rain_height, max_rain_height, data_rain_height_2);
-
-        //Get topic id      (argv = ["tmp_ES-1", "hum_ES-1", "wd_ES-1", "wi_ES-1", "rh_ES-1", 
-        //                           "tmp_ES-2", "hum_ES-2", "wd_ES-2", "wi_ES-2", "rh_ES-2"])
-
-        topic_temperature_1.name = argv[1];
-        topic_humidity_1.name = argv[2];
-        topic_wind_direction_1.name = argv[3];
-        topic_wind_intensity_1.name = argv[4];
-        topic_rain_height_1.name = argv[5];
-
-        topic_temperature_2.name = argv[6];
-        topic_humidity_2.name = argv[7];
-        topic_wind_direction_2.name = argv[8];
-        topic_wind_intensity_2.name = argv[9];
-        topic_rain_height_2.name = argv[10];
-
-        //Error messages
-        id_error_handler(topic_temperature_1);
-        id_error_handler(topic_temperature_2);
-
-        id_error_handler(topic_humidity_1);
-        id_error_handler(topic_humidity_2);
-
-        id_error_handler(topic_wind_direction_1);
-        id_error_handler(topic_wind_direction_2);
-
-        id_error_handler(topic_wind_intensity_1);
-        id_error_handler(topic_wind_intensity_2);
         
-        id_error_handler(topic_rain_height_1);
-        id_error_handler(topic_rain_height_2);
+        printf ("[Debug]: data_temperature_1 =  %s\n", data_temperature_1);
+
+        //printf("pub with topic: %s and name %s and flags 0x%02x\n", argv[1], payload_C, (int)flags);
+
+        topic_temperature_1.name = "tmp1";
+        topic_temperature_2.name = "tmp2";
+
+        topic_humidity_1.name = "hum1";
+        topic_humidity_2.name = "hum2";
+
+        topic_wind_direction_1.name = "wdir1";
+        topic_wind_direction_2.name = "wdir2";
+
+        topic_wind_intensity_1.name = "wint1";
+        topic_wind_intensity_2.name = "wint2";
+
+        topic_rain_height_1.name = "rnhgt1";
+        topic_rain_height_2.name = "rnhgt2";
+
+        //Get topic ID        
+        if (emcute_reg(&topic_temperature_1) != EMCUTE_OK) {
+            puts("error: unable to obtain topic ID");
+            return 1;
+        }
+        if (emcute_reg(&topic_temperature_2) != EMCUTE_OK) {
+            puts("error: unable to obtain topic ID");
+            return 1;
+        }
+        if (emcute_reg(&topic_humidity_1) != EMCUTE_OK) {
+            puts("error: unable to obtain topic ID");
+            return 1;
+        }
+        if (emcute_reg(&topic_humidity_2) != EMCUTE_OK) {
+            puts("error: unable to obtain topic ID");
+            return 1;
+        }
+        if (emcute_reg(&topic_wind_direction_1) != EMCUTE_OK) {
+            puts("error: unable to obtain topic ID");
+            return 1;
+        }
+        if (emcute_reg(&topic_wind_direction_2) != EMCUTE_OK) {
+            puts("error: unable to obtain topic ID");
+            return 1;
+        }
+        if (emcute_reg(&topic_wind_intensity_1) != EMCUTE_OK) {
+            puts("error: unable to obtain topic ID");
+            return 1;
+        }
+        if (emcute_reg(&topic_wind_intensity_2) != EMCUTE_OK) {
+            puts("error: unable to obtain topic ID");
+            return 1;
+        }
+        if (emcute_reg(&topic_rain_height_1) != EMCUTE_OK) {
+            puts("error: unable to obtain topic ID");
+            return 1;
+        }
+        if (emcute_reg(&topic_rain_height_2) != EMCUTE_OK) {
+            puts("error: unable to obtain topic ID");
+            return 1;
+        }
 
         //Publish data for temperature topic
         publish_sensor_data(topic_temperature_1, data_temperature_1, flags);
@@ -411,7 +410,6 @@ static int cmd_publish_environmental_station_data(int argc, char **argv){
         publish_sensor_data(topic_rain_height_1, data_rain_height_1, flags);
         publish_sensor_data(topic_rain_height_2, data_rain_height_2, flags);
     }
-
     return 0;
 }
 
@@ -419,16 +417,16 @@ static const shell_command_t shell_commands[] = {
     { "con", "connect to MQTT broker", cmd_con },
     { "discon", "disconnect from the current broker", cmd_discon },
     { "pub", "publish something", cmd_pub },
+    { "start", "start publish values", cmd_start },
     { "sub", "subscribe topic", cmd_sub },
     { "unsub", "unsubscribe from topic", cmd_unsub },
     { "will", "register a last will", cmd_will },
-    { "pub_ES_data", "publishes the data collected by the sensors in the environmental station", cmd_publish_environmental_station_data},
     { NULL, NULL, NULL }
 };
 
 int main(void)
 {
-    puts("Environmental stations simulator\n");
+    puts("MQTT-SN example application\n");
     puts("Type 'help' to get started. Have a look at the README.md for more"
          "information.");
 
