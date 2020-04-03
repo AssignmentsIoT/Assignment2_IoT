@@ -1681,7 +1681,7 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib32/crtn.o
  .text.publish_sensor_data
                 0x000000000000252c       0xed /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/application_emcute_mqttsn.a(main.o)
                 0x000000000000252c                publish_sensor_data
- .text.cmd_start
+ .text.cmd_publish_environmental_station_data
                 0x0000000000002619      0x5f7 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/application_emcute_mqttsn.a(main.o)
  .text.main     0x0000000000002c10       0xe5 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/application_emcute_mqttsn.a(main.o)
                 0x0000000000002c10                main
@@ -3462,7 +3462,7 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib32/crtn.o
                 [!provide]                        PROVIDE (_etext = .)
                 [!provide]                        PROVIDE (etext = .)
 
-.rodata         0x0000000000024ea8     0x3bf8
+.rodata         0x0000000000024ea8     0x3c2c
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata.cst4   0x0000000000024ea8        0x4 /usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib32/Scrt1.o
                 0x0000000000024ea8                _IO_stdin_used
@@ -3471,303 +3471,303 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib32/crtn.o
  *fill*         0x0000000000024eb9        0x3 
  .rodata        0x0000000000024ebc      0x4df /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/cpu/startup.o
  *fill*         0x000000000002539b        0x1 
- .rodata        0x000000000002539c      0x650 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/application_emcute_mqttsn.a(main.o)
- .rodata        0x00000000000259ec       0x1f /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/board.a(board_init.o)
- *fill*         0x0000000000025a0b        0x1 
- .rodata        0x0000000000025a0c       0x33 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(kernel_init.o)
- .rodata        0x0000000000025a3f        0xa /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(assert.o)
- .rodata        0x0000000000025a49        0xe /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(thread.o)
- *fill*         0x0000000000025a57        0x1 
- .rodata        0x0000000000025a58       0x7a /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(msg.o)
- *fill*         0x0000000000025ad2        0x2 
+ .rodata        0x000000000002539c      0x684 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/application_emcute_mqttsn.a(main.o)
+ .rodata        0x0000000000025a20       0x1f /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/board.a(board_init.o)
+ *fill*         0x0000000000025a3f        0x1 
+ .rodata        0x0000000000025a40       0x33 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(kernel_init.o)
+ .rodata        0x0000000000025a73        0xa /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(assert.o)
+ .rodata        0x0000000000025a7d        0xe /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(thread.o)
+ *fill*         0x0000000000025a8b        0x1 
+ .rodata        0x0000000000025a8c       0x7a /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(msg.o)
+ *fill*         0x0000000000025b06        0x2 
  .rodata.assert_crash_message
-                0x0000000000025ad4       0x12 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(panic.o)
-                0x0000000000025ad4                assert_crash_message
- .rodata        0x0000000000025ae6       0x2d /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(panic.o)
- *fill*         0x0000000000025b13        0x1 
- .rodata        0x0000000000025b14      0x1b2 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/cpu.a(syscalls.o)
- *fill*         0x0000000000025cc6        0x2 
- .rodata        0x0000000000025cc8      0x3bc /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/cpu.a(irq_cpu.o)
- .rodata        0x0000000000026084      0x1a5 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/cpu.a(native_cpu.o)
- *fill*         0x0000000000026229        0x3 
- .rodata        0x000000000002622c       0x86 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/emcute.a(emcute.o)
- *fill*         0x00000000000262b2        0x2 
+                0x0000000000025b08       0x12 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(panic.o)
+                0x0000000000025b08                assert_crash_message
+ .rodata        0x0000000000025b1a       0x2d /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(panic.o)
+ *fill*         0x0000000000025b47        0x1 
+ .rodata        0x0000000000025b48      0x1b2 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/cpu.a(syscalls.o)
+ *fill*         0x0000000000025cfa        0x2 
+ .rodata        0x0000000000025cfc      0x3bc /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/cpu.a(irq_cpu.o)
+ .rodata        0x00000000000260b8      0x1a5 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/cpu.a(native_cpu.o)
+ *fill*         0x000000000002625d        0x3 
+ .rodata        0x0000000000026260       0x86 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/emcute.a(emcute.o)
+ *fill*         0x00000000000262e6        0x2 
  .rodata.emcute_run
-                0x00000000000262b4       0x64 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/emcute.a(emcute.o)
- .rodata        0x0000000000026318       0x26 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_sock_udp.a(gnrc_sock_udp.o)
- *fill*         0x000000000002633e        0x2 
- .rodata        0x0000000000026340       0x30 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_udp.a(gnrc_udp.o)
+                0x00000000000262e8       0x64 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/emcute.a(emcute.o)
+ .rodata        0x000000000002634c       0x26 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_sock_udp.a(gnrc_sock_udp.o)
+ *fill*         0x0000000000026372        0x2 
+ .rodata        0x0000000000026374       0x30 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_udp.a(gnrc_udp.o)
  .rodata.ipv6_addr_unspecified
-                0x0000000000026370       0x10 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr.o)
-                0x0000000000026370                ipv6_addr_unspecified
+                0x00000000000263a4       0x10 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr.o)
+                0x00000000000263a4                ipv6_addr_unspecified
  .rodata.ipv6_addr_loopback
-                0x0000000000026380       0x10 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr.o)
-                0x0000000000026380                ipv6_addr_loopback
+                0x00000000000263b4       0x10 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr.o)
+                0x00000000000263b4                ipv6_addr_loopback
  .rodata.ipv6_addr_link_local_prefix
-                0x0000000000026390       0x10 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr.o)
-                0x0000000000026390                ipv6_addr_link_local_prefix
+                0x00000000000263c4       0x10 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr.o)
+                0x00000000000263c4                ipv6_addr_link_local_prefix
  .rodata.ipv6_addr_solicited_node_prefix
-                0x00000000000263a0       0x10 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr.o)
-                0x00000000000263a0                ipv6_addr_solicited_node_prefix
+                0x00000000000263d4       0x10 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr.o)
+                0x00000000000263d4                ipv6_addr_solicited_node_prefix
  .rodata.ipv6_addr_all_nodes_link_local
-                0x00000000000263b0       0x10 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr.o)
-                0x00000000000263b0                ipv6_addr_all_nodes_link_local
+                0x00000000000263e4       0x10 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr.o)
+                0x00000000000263e4                ipv6_addr_all_nodes_link_local
  .rodata.ipv6_addr_all_routers_link_local
-                0x00000000000263c0       0x10 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr.o)
-                0x00000000000263c0                ipv6_addr_all_routers_link_local
- .rodata        0x00000000000263d0       0x11 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr_to_str.o)
- .rodata        0x00000000000263e1       0x22 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr_from_str.o)
- .rodata        0x0000000000026403       0x52 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/native-drivers.a(native-led.o)
- *fill*         0x0000000000026455        0x3 
- .rodata        0x0000000000026458       0x5e /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/periph.a(pm.o)
- .rodata        0x00000000000264b6       0x2f /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/periph.a(timer.o)
- *fill*         0x00000000000264e5        0x3 
- .rodata        0x00000000000264e8      0x163 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ps.a(ps.o)
- *fill*         0x000000000002664b        0x1 
- .rodata        0x000000000002664c       0x84 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell.a(shell.o)
- .rodata        0x00000000000266d0       0xfa /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(shell_commands.o)
- *fill*         0x00000000000267ca        0x2 
- .rodata        0x00000000000267cc       0x4e /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_random.o)
- *fill*         0x000000000002681a        0x2 
- .rodata        0x000000000002681c     0x1087 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_gnrc_netif.o)
- *fill*         0x00000000000278a3        0x1 
+                0x00000000000263f4       0x10 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr.o)
+                0x00000000000263f4                ipv6_addr_all_routers_link_local
+ .rodata        0x0000000000026404       0x11 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr_to_str.o)
+ .rodata        0x0000000000026415       0x22 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr_from_str.o)
+ .rodata        0x0000000000026437       0x52 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/native-drivers.a(native-led.o)
+ *fill*         0x0000000000026489        0x3 
+ .rodata        0x000000000002648c       0x5e /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/periph.a(pm.o)
+ .rodata        0x00000000000264ea       0x2f /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/periph.a(timer.o)
+ *fill*         0x0000000000026519        0x3 
+ .rodata        0x000000000002651c      0x163 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ps.a(ps.o)
+ *fill*         0x000000000002667f        0x1 
+ .rodata        0x0000000000026680       0x84 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell.a(shell.o)
+ .rodata        0x0000000000026704       0xfa /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(shell_commands.o)
+ *fill*         0x00000000000267fe        0x2 
+ .rodata        0x0000000000026800       0x4e /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_random.o)
+ *fill*         0x000000000002684e        0x2 
+ .rodata        0x0000000000026850     0x1087 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_gnrc_netif.o)
+ *fill*         0x00000000000278d7        0x1 
  .rodata._print_netopt
-                0x00000000000278a4      0x114 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_gnrc_netif.o)
- .rodata        0x00000000000279b8      0x1e8 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_gnrc_ipv6_nib.o)
- .rodata        0x0000000000027ba0      0x3b1 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_gnrc_icmpv6_echo.o)
- *fill*         0x0000000000027f51        0x3 
+                0x00000000000278d8      0x114 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_gnrc_netif.o)
+ .rodata        0x00000000000279ec      0x1e8 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_gnrc_ipv6_nib.o)
+ .rodata        0x0000000000027bd4      0x3b1 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_gnrc_icmpv6_echo.o)
+ *fill*         0x0000000000027f85        0x3 
  .rodata._configure
-                0x0000000000027f54       0x78 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_gnrc_icmpv6_echo.o)
- .rodata        0x0000000000027fcc       0x10 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/auto_init_gnrc_netif.a(auto_init_netdev_tap.o)
- .rodata        0x0000000000027fdc       0x98 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/cpu.a(async_read.o)
+                0x0000000000027f88       0x78 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_gnrc_icmpv6_echo.o)
+ .rodata        0x0000000000028000       0x10 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/auto_init_gnrc_netif.a(auto_init_netdev_tap.o)
+ .rodata        0x0000000000028010       0x98 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/cpu.a(async_read.o)
  .rodata._hex_chars
-                0x0000000000028074       0x10 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/fmt.a(fmt.o)
- .rodata        0x0000000000028084       0x31 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6.a(gnrc_ipv6.o)
- *fill*         0x00000000000280b5        0x3 
- .rodata        0x00000000000280b8       0x2a /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(nib.o)
- *fill*         0x00000000000280e2        0x2 
+                0x00000000000280a8       0x10 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/fmt.a(fmt.o)
+ .rodata        0x00000000000280b8       0x31 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6.a(gnrc_ipv6.o)
+ *fill*         0x00000000000280e9        0x3 
+ .rodata        0x00000000000280ec       0x2a /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(nib.o)
+ *fill*         0x0000000000028116        0x2 
  .rodata.gnrc_ipv6_nib_handle_timer_event
-                0x00000000000280e4       0x4c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(nib.o)
- .rodata        0x0000000000028130       0x86 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(nib_nc.o)
- *fill*         0x00000000000281b6        0x2 
- .rodata        0x00000000000281b8       0x30 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(_nib-arsm.o)
- .rodata        0x00000000000281e8       0x5f /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(nib_pl.o)
- *fill*         0x0000000000028247        0x1 
- .rodata        0x0000000000028248       0x34 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(_nib-internal.o)
- .rodata        0x000000000002827c       0x53 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(nib_ft.o)
- *fill*         0x00000000000282cf        0x1 
- .rodata        0x00000000000282d0       0x2a /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ndp.a(gnrc_ndp.o)
- *fill*         0x00000000000282fa        0x2 
- .rodata        0x00000000000282fc       0x22 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netapi.a(gnrc_netapi.o)
- *fill*         0x000000000002831e        0x2 
- .rodata        0x0000000000028320       0x69 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netif.a(gnrc_netif.o)
- *fill*         0x0000000000028389        0x3 
+                0x0000000000028118       0x4c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(nib.o)
+ .rodata        0x0000000000028164       0x86 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(nib_nc.o)
+ *fill*         0x00000000000281ea        0x2 
+ .rodata        0x00000000000281ec       0x30 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(_nib-arsm.o)
+ .rodata        0x000000000002821c       0x5f /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(nib_pl.o)
+ *fill*         0x000000000002827b        0x1 
+ .rodata        0x000000000002827c       0x34 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(_nib-internal.o)
+ .rodata        0x00000000000282b0       0x53 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(nib_ft.o)
+ *fill*         0x0000000000028303        0x1 
+ .rodata        0x0000000000028304       0x2a /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ndp.a(gnrc_ndp.o)
+ *fill*         0x000000000002832e        0x2 
+ .rodata        0x0000000000028330       0x22 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netapi.a(gnrc_netapi.o)
+ *fill*         0x0000000000028352        0x2 
+ .rodata        0x0000000000028354       0x69 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netif.a(gnrc_netif.o)
+ *fill*         0x00000000000283bd        0x3 
  .rodata.gnrc_netif_get_from_netdev
-                0x000000000002838c       0xe4 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netif.a(gnrc_netif.o)
+                0x00000000000283c0       0xe4 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netif.a(gnrc_netif.o)
  .rodata.gnrc_netif_set_from_netdev
-                0x0000000000028470       0x50 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netif.a(gnrc_netif.o)
+                0x00000000000284a4       0x50 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netif.a(gnrc_netif.o)
  .rodata._test_options
-                0x00000000000284c0       0x20 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netif.a(gnrc_netif.o)
+                0x00000000000284f4       0x20 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netif.a(gnrc_netif.o)
  .rodata.enable.6008
-                0x00000000000284e0        0x4 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netif.a(gnrc_netif.o)
- .rodata        0x00000000000284e4       0x7a /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netreg.a(gnrc_netreg.o)
- *fill*         0x000000000002855e        0x2 
- .rodata        0x0000000000028560       0x30 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_pktbuf_static.a(gnrc_pktbuf_static.o)
- .rodata        0x0000000000028590       0x1e /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_sock.a(gnrc_sock.o)
- *fill*         0x00000000000285ae        0x2 
- .rodata        0x00000000000285b0      0x108 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/l2util.a(l2util.o)
- .rodata        0x00000000000286b8       0x10 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/luid.a(luid.o)
- .rodata        0x00000000000286c8      0x129 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/netdev_tap.a(netdev_tap.o)
- *fill*         0x00000000000287f1        0x3 
- .rodata        0x00000000000287f4      0x10a /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/periph.a(hwrng.o)
- .rodata        0x00000000000288fe       0x14 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/random.a(random.o)
- .rodata        0x0000000000028912        0xe /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(rmutex.o)
- .rodata        0x0000000000028920       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/evtimer.a(evtimer.o)
- .rodata        0x0000000000028944       0x30 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_icmpv6.a(gnrc_icmpv6.o)
+                0x0000000000028514        0x4 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netif.a(gnrc_netif.o)
+ .rodata        0x0000000000028518       0x7a /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netreg.a(gnrc_netreg.o)
+ *fill*         0x0000000000028592        0x2 
+ .rodata        0x0000000000028594       0x30 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_pktbuf_static.a(gnrc_pktbuf_static.o)
+ .rodata        0x00000000000285c4       0x1e /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_sock.a(gnrc_sock.o)
+ *fill*         0x00000000000285e2        0x2 
+ .rodata        0x00000000000285e4      0x108 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/l2util.a(l2util.o)
+ .rodata        0x00000000000286ec       0x10 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/luid.a(luid.o)
+ .rodata        0x00000000000286fc      0x129 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/netdev_tap.a(netdev_tap.o)
+ *fill*         0x0000000000028825        0x3 
+ .rodata        0x0000000000028828      0x10a /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/periph.a(hwrng.o)
+ .rodata        0x0000000000028932       0x14 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/random.a(random.o)
+ .rodata        0x0000000000028946        0xe /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(rmutex.o)
+ .rodata        0x0000000000028954       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/evtimer.a(evtimer.o)
+ .rodata        0x0000000000028978       0x30 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_icmpv6.a(gnrc_icmpv6.o)
  .rodata.gnrc_icmpv6_demux
-                0x0000000000028974       0x7c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_icmpv6.a(gnrc_icmpv6.o)
- .rodata        0x00000000000289f0       0x20 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/netdev_eth.a(netdev_eth.o)
+                0x00000000000289a8       0x7c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_icmpv6.a(gnrc_icmpv6.o)
+ .rodata        0x0000000000028a24       0x20 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/netdev_eth.a(netdev_eth.o)
  .rodata.netdev_eth_get
-                0x0000000000028a10       0x90 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/netdev_eth.a(netdev_eth.o)
+                0x0000000000028a44       0x90 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/netdev_eth.a(netdev_eth.o)
 
 .rodata1
  *(.rodata1)
 
-.eh_frame_hdr   0x0000000000028aa0     0x18a4
+.eh_frame_hdr   0x0000000000028ad4     0x18a4
  *(.eh_frame_hdr)
- .eh_frame_hdr  0x0000000000028aa0     0x18a4 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/cpu/startup.o
-                0x0000000000028aa0                __GNU_EH_FRAME_HDR
+ .eh_frame_hdr  0x0000000000028ad4     0x18a4 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/cpu/startup.o
+                0x0000000000028ad4                __GNU_EH_FRAME_HDR
  *(.eh_frame_entry .eh_frame_entry.*)
 
-.eh_frame       0x000000000002a344     0x6bdc
+.eh_frame       0x000000000002a378     0x6bdc
  *(.eh_frame)
- .eh_frame      0x000000000002a344       0x3c /usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib32/Scrt1.o
+ .eh_frame      0x000000000002a378       0x3c /usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib32/Scrt1.o
                                          0x40 (size before relaxing)
- .eh_frame      0x000000000002a380       0x14 /usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib32/Scrt1.o
+ .eh_frame      0x000000000002a3b4       0x14 /usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib32/Scrt1.o
                                          0x2c (size before relaxing)
- .eh_frame      0x000000000002a394       0xd0 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/cpu/startup.o
+ .eh_frame      0x000000000002a3c8       0xd0 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/cpu/startup.o
                                          0xfc (size before relaxing)
- .eh_frame      0x000000000002a464      0x214 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/application_emcute_mqttsn.a(main.o)
+ .eh_frame      0x000000000002a498      0x214 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/application_emcute_mqttsn.a(main.o)
                                         0x240 (size before relaxing)
- .eh_frame      0x000000000002a678       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/board.a(board_init.o)
+ .eh_frame      0x000000000002a6ac       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/board.a(board_init.o)
                                          0x50 (size before relaxing)
- .eh_frame      0x000000000002a69c        0x0 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/board.a(board.o)
+ .eh_frame      0x000000000002a6d0        0x0 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/board.a(board.o)
                                          0x58 (size before relaxing)
- .eh_frame      0x000000000002a69c       0x5c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(kernel_init.o)
+ .eh_frame      0x000000000002a6d0       0x5c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(kernel_init.o)
                                          0x88 (size before relaxing)
- .eh_frame      0x000000000002a6f8       0x1c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(assert.o)
+ .eh_frame      0x000000000002a72c       0x1c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(assert.o)
                                          0x48 (size before relaxing)
- .eh_frame      0x000000000002a714       0xd0 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(thread.o)
+ .eh_frame      0x000000000002a748       0xd0 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(thread.o)
                                         0x1dc (size before relaxing)
- .eh_frame      0x000000000002a7e4      0x290 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(msg.o)
+ .eh_frame      0x000000000002a818      0x290 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(msg.o)
                                         0x340 (size before relaxing)
- .eh_frame      0x000000000002aa74       0xf4 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(thread_flags.o)
+ .eh_frame      0x000000000002aaa8       0xf4 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(thread_flags.o)
                                         0x17c (size before relaxing)
- .eh_frame      0x000000000002ab68       0x3c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(panic.o)
+ .eh_frame      0x000000000002ab9c       0x3c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(panic.o)
                                          0x7c (size before relaxing)
- .eh_frame      0x000000000002aba4       0xe8 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(sched.o)
+ .eh_frame      0x000000000002abd8       0xe8 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(sched.o)
                                         0x128 (size before relaxing)
- .eh_frame      0x000000000002ac8c      0x358 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/cpu.a(syscalls.o)
+ .eh_frame      0x000000000002acc0      0x358 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/cpu.a(syscalls.o)
                                         0x464 (size before relaxing)
- .eh_frame      0x000000000002afe4      0x224 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/cpu.a(irq_cpu.o)
+ .eh_frame      0x000000000002b018      0x224 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/cpu.a(irq_cpu.o)
                                         0x2e0 (size before relaxing)
- .eh_frame      0x000000000002b208      0x108 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/cpu.a(native_cpu.o)
+ .eh_frame      0x000000000002b23c      0x108 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/cpu.a(native_cpu.o)
                                         0x168 (size before relaxing)
- .eh_frame      0x000000000002b310      0x42c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/emcute.a(emcute.o)
+ .eh_frame      0x000000000002b344      0x42c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/emcute.a(emcute.o)
                                         0x46c (size before relaxing)
- .eh_frame      0x000000000002b73c      0x184 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_sock_udp.a(gnrc_sock_udp.o)
+ .eh_frame      0x000000000002b770      0x184 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_sock_udp.a(gnrc_sock_udp.o)
                                         0x230 (size before relaxing)
- .eh_frame      0x000000000002b8c0      0x240 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_udp.a(gnrc_udp.o)
+ .eh_frame      0x000000000002b8f4      0x240 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_udp.a(gnrc_udp.o)
                                         0x280 (size before relaxing)
- .eh_frame      0x000000000002bb00       0x20 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/inet_csum.a(inet_csum.o)
+ .eh_frame      0x000000000002bb34       0x20 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/inet_csum.a(inet_csum.o)
                                          0x4c (size before relaxing)
- .eh_frame      0x000000000002bb20       0x94 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr.o)
+ .eh_frame      0x000000000002bb54       0x94 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr.o)
                                         0x130 (size before relaxing)
- .eh_frame      0x000000000002bbb4       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr_to_str.o)
+ .eh_frame      0x000000000002bbe8       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr_to_str.o)
                                          0x50 (size before relaxing)
- .eh_frame      0x000000000002bbd8       0x48 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr_from_str.o)
+ .eh_frame      0x000000000002bc0c       0x48 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ipv6_addr.a(ipv6_addr_from_str.o)
                                          0x88 (size before relaxing)
- .eh_frame      0x000000000002bc20       0x48 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/native-drivers.a(native-led.o)
+ .eh_frame      0x000000000002bc54       0x48 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/native-drivers.a(native-led.o)
                                         0x104 (size before relaxing)
- .eh_frame      0x000000000002bc68       0x5c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/periph.a(pm.o)
+ .eh_frame      0x000000000002bc9c       0x5c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/periph.a(pm.o)
                                          0x88 (size before relaxing)
- .eh_frame      0x000000000002bcc4       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/periph.a(uart.o)
+ .eh_frame      0x000000000002bcf8       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/periph.a(uart.o)
                                         0x110 (size before relaxing)
- .eh_frame      0x000000000002bce8       0xf0 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/periph.a(timer.o)
+ .eh_frame      0x000000000002bd1c       0xf0 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/periph.a(timer.o)
                                         0x190 (size before relaxing)
- .eh_frame      0x000000000002bdd8       0x30 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ps.a(ps.o)
+ .eh_frame      0x000000000002be0c       0x30 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/ps.a(ps.o)
                                          0x5c (size before relaxing)
- .eh_frame      0x000000000002be08       0xfc /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell.a(shell.o)
+ .eh_frame      0x000000000002be3c       0xfc /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell.a(shell.o)
                                         0x13c (size before relaxing)
- .eh_frame      0x000000000002bf04       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_sys.o)
+ .eh_frame      0x000000000002bf38       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_sys.o)
                                          0x50 (size before relaxing)
- .eh_frame      0x000000000002bf28       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_ps.o)
+ .eh_frame      0x000000000002bf5c       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_ps.o)
                                          0x50 (size before relaxing)
- .eh_frame      0x000000000002bf4c       0x8c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_random.o)
+ .eh_frame      0x000000000002bf80       0x8c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_random.o)
                                          0xcc (size before relaxing)
- .eh_frame      0x000000000002bfd8      0x4d0 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_gnrc_netif.o)
+ .eh_frame      0x000000000002c00c      0x4d0 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_gnrc_netif.o)
                                         0x510 (size before relaxing)
- .eh_frame      0x000000000002c4a8      0x168 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_gnrc_ipv6_nib.o)
+ .eh_frame      0x000000000002c4dc      0x168 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_gnrc_ipv6_nib.o)
                                         0x1a8 (size before relaxing)
- .eh_frame      0x000000000002c610      0x36c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_gnrc_icmpv6_echo.o)
+ .eh_frame      0x000000000002c644      0x36c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/shell_commands.a(sc_gnrc_icmpv6_echo.o)
                                         0x3c0 (size before relaxing)
- .eh_frame      0x000000000002c97c      0x394 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/xtimer.a(xtimer_core.o)
+ .eh_frame      0x000000000002c9b0      0x394 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/xtimer.a(xtimer_core.o)
                                         0x3d4 (size before relaxing)
- .eh_frame      0x000000000002cd10       0x68 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/xtimer.a(xtimer.o)
+ .eh_frame      0x000000000002cd44       0x68 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/xtimer.a(xtimer.o)
                                         0x4f8 (size before relaxing)
- .eh_frame      0x000000000002cd78       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/periph_common.a(init.o)
+ .eh_frame      0x000000000002cdac       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/periph_common.a(init.o)
                                          0x50 (size before relaxing)
- .eh_frame      0x000000000002cd9c       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/auto_init.a(auto_init.o)
+ .eh_frame      0x000000000002cdd0       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/auto_init.a(auto_init.o)
                                          0x50 (size before relaxing)
- .eh_frame      0x000000000002cdc0       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/auto_init_gnrc_netif.a(auto_init_netdev_tap.o)
+ .eh_frame      0x000000000002cdf4       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/auto_init_gnrc_netif.a(auto_init_netdev_tap.o)
                                          0x50 (size before relaxing)
- .eh_frame      0x000000000002cde4       0x68 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(mutex.o)
+ .eh_frame      0x000000000002ce18       0x68 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(mutex.o)
                                          0xcc (size before relaxing)
- .eh_frame      0x000000000002ce4c       0xbc /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/cpu.a(async_read.o)
+ .eh_frame      0x000000000002ce80       0xbc /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/cpu.a(async_read.o)
                                          0xfc (size before relaxing)
- .eh_frame      0x000000000002cf08        0x0 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/div.a(div.o)
+ .eh_frame      0x000000000002cf3c        0x0 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/div.a(div.o)
                                          0x5c (size before relaxing)
- .eh_frame      0x000000000002cf08       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/fmt.a(fmt.o)
+ .eh_frame      0x000000000002cf3c       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/fmt.a(fmt.o)
                                         0x574 (size before relaxing)
- .eh_frame      0x000000000002cf2c      0x120 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_icmpv6_echo.a(gnrc_icmpv6_echo.o)
+ .eh_frame      0x000000000002cf60      0x120 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_icmpv6_echo.a(gnrc_icmpv6_echo.o)
                                         0x160 (size before relaxing)
- .eh_frame      0x000000000002d04c      0x4e0 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6.a(gnrc_ipv6.o)
+ .eh_frame      0x000000000002d080      0x4e0 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6.a(gnrc_ipv6.o)
                                         0x520 (size before relaxing)
- .eh_frame      0x000000000002d52c       0xac /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_hdr.a(gnrc_ipv6_hdr.o)
+ .eh_frame      0x000000000002d560       0xac /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_hdr.a(gnrc_ipv6_hdr.o)
                                          0xec (size before relaxing)
- .eh_frame      0x000000000002d5d8      0x5f0 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(nib.o)
+ .eh_frame      0x000000000002d60c      0x5f0 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(nib.o)
                                         0x630 (size before relaxing)
- .eh_frame      0x000000000002dbc8      0x158 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(nib_nc.o)
+ .eh_frame      0x000000000002dbfc      0x158 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(nib_nc.o)
                                         0x198 (size before relaxing)
- .eh_frame      0x000000000002dd20      0x410 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(_nib-arsm.o)
+ .eh_frame      0x000000000002dd54      0x410 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(_nib-arsm.o)
                                         0x450 (size before relaxing)
- .eh_frame      0x000000000002e130      0x1ec /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(nib_pl.o)
+ .eh_frame      0x000000000002e164      0x1ec /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(nib_pl.o)
                                         0x22c (size before relaxing)
- .eh_frame      0x000000000002e31c      0x6b4 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(_nib-internal.o)
+ .eh_frame      0x000000000002e350      0x6b4 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(_nib-internal.o)
                                         0x6f4 (size before relaxing)
- .eh_frame      0x000000000002e9d0      0x148 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(nib_ft.o)
+ .eh_frame      0x000000000002ea04      0x148 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(nib_ft.o)
                                         0x1ac (size before relaxing)
- .eh_frame      0x000000000002eb18      0x2c8 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(_nib-slaac.o)
+ .eh_frame      0x000000000002eb4c      0x2c8 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ipv6_nib.a(_nib-slaac.o)
                                         0x308 (size before relaxing)
- .eh_frame      0x000000000002ede0      0x25c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ndp.a(gnrc_ndp.o)
+ .eh_frame      0x000000000002ee14      0x25c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_ndp.a(gnrc_ndp.o)
                                         0x424 (size before relaxing)
- .eh_frame      0x000000000002f03c       0xd4 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netapi.a(gnrc_netapi.o)
+ .eh_frame      0x000000000002f070       0xd4 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netapi.a(gnrc_netapi.o)
                                         0x114 (size before relaxing)
- .eh_frame      0x000000000002f110      0x7c0 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netif.a(gnrc_netif.o)
+ .eh_frame      0x000000000002f144      0x7c0 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netif.a(gnrc_netif.o)
                                         0x87c (size before relaxing)
- .eh_frame      0x000000000002f8d0       0x64 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netif.a(gnrc_netif_device_type.o)
+ .eh_frame      0x000000000002f904       0x64 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netif.a(gnrc_netif_device_type.o)
                                          0xb4 (size before relaxing)
- .eh_frame      0x000000000002f934      0x224 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netif_ethernet.a(gnrc_netif_ethernet.o)
+ .eh_frame      0x000000000002f968      0x224 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netif_ethernet.a(gnrc_netif_ethernet.o)
                                         0x264 (size before relaxing)
- .eh_frame      0x000000000002fb58       0x8c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netif_hdr.a(gnrc_netif_hdr.o)
+ .eh_frame      0x000000000002fb8c       0x8c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netif_hdr.a(gnrc_netif_hdr.o)
                                         0x164 (size before relaxing)
- .eh_frame      0x000000000002fbe4      0x108 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netreg.a(gnrc_netreg.o)
+ .eh_frame      0x000000000002fc18      0x108 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_netreg.a(gnrc_netreg.o)
                                         0x16c (size before relaxing)
- .eh_frame      0x000000000002fcec       0x20 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_pkt.a(gnrc_pkt.o)
+ .eh_frame      0x000000000002fd20       0x20 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_pkt.a(gnrc_pkt.o)
                                          0x4c (size before relaxing)
- .eh_frame      0x000000000002fd0c       0x8c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_pktbuf.a(gnrc_pktbuf.o)
+ .eh_frame      0x000000000002fd40       0x8c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_pktbuf.a(gnrc_pktbuf.o)
                                         0x114 (size before relaxing)
- .eh_frame      0x000000000002fd98      0x258 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_pktbuf_static.a(gnrc_pktbuf_static.o)
+ .eh_frame      0x000000000002fdcc      0x258 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_pktbuf_static.a(gnrc_pktbuf_static.o)
                                         0x2fc (size before relaxing)
- .eh_frame      0x000000000002fff0      0x1e4 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_sock.a(gnrc_sock.o)
+ .eh_frame      0x0000000000030024      0x1e4 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_sock.a(gnrc_sock.o)
                                         0x224 (size before relaxing)
- .eh_frame      0x00000000000301d4       0x88 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/l2util.a(l2util.o)
+ .eh_frame      0x0000000000030208       0x88 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/l2util.a(l2util.o)
                                         0x10c (size before relaxing)
- .eh_frame      0x000000000003025c       0x70 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/luid.a(luid.o)
+ .eh_frame      0x0000000000030290       0x70 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/luid.a(luid.o)
                                          0xb0 (size before relaxing)
- .eh_frame      0x00000000000302cc      0x21c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/netdev_tap.a(netdev_tap.o)
+ .eh_frame      0x0000000000030300      0x21c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/netdev_tap.a(netdev_tap.o)
                                         0x270 (size before relaxing)
- .eh_frame      0x00000000000304e8       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/periph.a(cpuid.o)
+ .eh_frame      0x000000000003051c       0x24 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/periph.a(cpuid.o)
                                          0x50 (size before relaxing)
- .eh_frame      0x000000000003050c       0xd8 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/periph.a(hwrng.o)
+ .eh_frame      0x0000000000030540       0xd8 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/periph.a(hwrng.o)
                                         0x118 (size before relaxing)
- .eh_frame      0x00000000000305e4       0x48 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/random.a(random.o)
+ .eh_frame      0x0000000000030618       0x48 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/random.a(random.o)
                                          0x98 (size before relaxing)
- .eh_frame      0x000000000003062c       0xa4 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/random.a(tinymt32.o)
+ .eh_frame      0x0000000000030660       0xa4 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/random.a(tinymt32.o)
                                          0xf4 (size before relaxing)
- .eh_frame      0x00000000000306d0       0x64 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/tinymt32.a(tinymt32.o)
+ .eh_frame      0x0000000000030704       0x64 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/tinymt32.a(tinymt32.o)
                                          0xf0 (size before relaxing)
- .eh_frame      0x0000000000030734       0x28 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(bitarithm.o)
+ .eh_frame      0x0000000000030768       0x28 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(bitarithm.o)
                                          0x74 (size before relaxing)
- .eh_frame      0x000000000003075c       0xd0 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(rmutex.o)
+ .eh_frame      0x0000000000030790       0xd0 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(rmutex.o)
                                         0x130 (size before relaxing)
- .eh_frame      0x000000000003082c      0x140 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(mbox.o)
+ .eh_frame      0x0000000000030860      0x140 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/core.a(mbox.o)
                                         0x180 (size before relaxing)
- .eh_frame      0x000000000003096c      0x26c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/evtimer.a(evtimer.o)
+ .eh_frame      0x00000000000309a0      0x26c /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/evtimer.a(evtimer.o)
                                         0x2e4 (size before relaxing)
- .eh_frame      0x0000000000030bd8      0x160 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_icmpv6.a(gnrc_icmpv6.o)
+ .eh_frame      0x0000000000030c0c      0x160 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/gnrc_icmpv6.a(gnrc_icmpv6.o)
                                         0x1b4 (size before relaxing)
- .eh_frame      0x0000000000030d38       0x40 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/iolist.a(iolist.o)
+ .eh_frame      0x0000000000030d6c       0x40 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/iolist.a(iolist.o)
                                          0x8c (size before relaxing)
- .eh_frame      0x0000000000030d78       0xa4 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/netdev_eth.a(netdev_eth.o)
+ .eh_frame      0x0000000000030dac       0xa4 /home/silvia/Università/Magistrale/IoT/Assignment2_IoT/Fake_RIOT_devices/bin/native/netdev_eth.a(netdev_eth.o)
                                          0xd0 (size before relaxing)
- .eh_frame      0x0000000000030e1c       0x84 /usr/lib/gcc/x86_64-linux-gnu/7/32/libgcc.a(_udivdi3.o)
+ .eh_frame      0x0000000000030e50       0x84 /usr/lib/gcc/x86_64-linux-gnu/7/32/libgcc.a(_udivdi3.o)
                                          0x9c (size before relaxing)
- .eh_frame      0x0000000000030ea0       0x60 /usr/lib32/libc_nonshared.a(elf-init.oS)
+ .eh_frame      0x0000000000030ed4       0x60 /usr/lib32/libc_nonshared.a(elf-init.oS)
                                          0x8c (size before relaxing)
- .eh_frame      0x0000000000030f00       0x1c /usr/lib32/libc_nonshared.a(stack_chk_fail_local.oS)
+ .eh_frame      0x0000000000030f34       0x1c /usr/lib32/libc_nonshared.a(stack_chk_fail_local.oS)
                                          0x48 (size before relaxing)
- .eh_frame      0x0000000000030f1c        0x4 /usr/lib/gcc/x86_64-linux-gnu/7/32/crtendS.o
+ .eh_frame      0x0000000000030f50        0x4 /usr/lib/gcc/x86_64-linux-gnu/7/32/crtendS.o
  *(.eh_frame.*)
 
 .gcc_except_table

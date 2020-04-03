@@ -268,7 +268,7 @@ int publish_sensor_data(emcute_topic_t topic_sensor, char* data_sensor, unsigned
     return 0;
 }
 
-static int cmd_start (int argc, char **argv) { 
+static int cmd_publish_environmental_station_data (int argc, char **argv) { 
 
     //Avoid errors
     (void) argc;
@@ -330,8 +330,6 @@ static int cmd_start (int argc, char **argv) {
         get_next_value(min_rain_height, max_rain_height, data_rain_height_2);
         
         printf ("[Debug]: data_temperature_1 =  %s\n", data_temperature_1);
-
-        //printf("pub with topic: %s and name %s and flags 0x%02x\n", argv[1], payload_C, (int)flags);
 
         topic_temperature_1.name = "tmp1";
         topic_temperature_2.name = "tmp2";
@@ -417,7 +415,7 @@ static const shell_command_t shell_commands[] = {
     { "con", "connect to MQTT broker", cmd_con },
     { "discon", "disconnect from the current broker", cmd_discon },
     { "pub", "publish something", cmd_pub },
-    { "start", "start publish values", cmd_start },
+    { "pub_ES_data", "publish sensors' data for both environmental stations", cmd_publish_environmental_station_data },
     { "sub", "subscribe topic", cmd_sub },
     { "unsub", "unsubscribe from topic", cmd_unsub },
     { "will", "register a last will", cmd_will },
@@ -426,7 +424,7 @@ static const shell_command_t shell_commands[] = {
 
 int main(void)
 {
-    puts("MQTT-SN example application\n");
+    puts("Environmental stations simulator.\n");
     puts("Type 'help' to get started. Have a look at the README.md for more"
          "information.");
 
