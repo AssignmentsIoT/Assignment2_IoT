@@ -19,4 +19,6 @@ The MQTT-SN broker is done using Mosquitto RSMB: https://github.com/eclipse/mosq
 The bridge was implemented with Python.<br/>
 All the details on how to implement it and make it work are in the tutorial on Hacksteer.io.<br/>
 
+Here you can find a [PDF report](https://github.com/AssignmentsIoT/Assignment2_IoT/blob/master/Environmental%20Station%20Monitoring%20System-1.pdf) (there is also a pptx version in the repository).
+
 Have a nice day!
