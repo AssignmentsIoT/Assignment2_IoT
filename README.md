@@ -1,8 +1,8 @@
 # Assignmet2_IoT
 
 Hi everyone! This is the repository I'll use to keep all the code related to the second assignent of my IoT course at Sapienza.
-You can find a detailed tutorial in the article I posted on Hackster.io: https://www.hackster.io/silvia-del-piano/environmental-stations-monitoring-system-with-mqtt-broker-8f755c .<br/>
-To see everything in action check the video I posted on Youtube: https://www.youtube.com/watch?v=JK9cNhD_iBc.<br/>
+You can find a detailed **tutorial** in the article I posted **on Hackster.io**: https://www.hackster.io/silvia-del-piano/environmental-stations-monitoring-system-with-mqtt-broker-8f755c .<br/>
+To see everything in action check the **video** I posted **on Youtube**: https://www.youtube.com/watch?v=JK9cNhD_iBc.<br/>
 This work comes directly after the first assignment, so I suggest you have a look at my corresponding repo before.<br/>
 ## Main idea
 In a few words we want to build the architecture you can see in the PDF.<br/>
